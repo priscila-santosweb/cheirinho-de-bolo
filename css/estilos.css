@@ -1,0 +1,363 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');
+
+
+
+
+* { box-sizing: border-box;}
+
+
+body,
+h1,
+h2,
+p,
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+img { max-width: 100%;}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    /* background: linear-gradient(72deg, #3debb0 1%, #8956f3 99%);
+    color: #8956f3; */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.topo {
+    padding-top: 10px;
+    background-color: rgb(253, 89, 29);
+    /* height: 200px; */
+    text-align: center;
+    
+    /* margin-top: 50px; */
+    
+}
+
+h1 a {
+    background-color:  rgb(253, 89, 29);
+}
+  
+
+  
+.menu {
+    /* background-color: aqua; */
+    /* text-align: center; */
+    text-transform: uppercase;
+    /* margin-bottom: 40px; */
+    height: 50px;
+    display: flex;
+    justify-content:space-around;
+    font-style: inherit;
+    font-weight: bold;
+    align-items: center;
+    gap: 4.5px;
+}
+
+.menu a:hover, .menu a:focus { background-color: rgb(241, 69, 7);}
+
+.rede-social  { 
+    /* background-color: blue; */
+    display: flex;
+    text-align: right;
+    padding-right: 20px;
+    margin-bottom: 30px;
+    justify-content: right;
+   
+}
+
+.menu a {
+    /* background-color: aliceblue; */
+    display: flex;
+    /* width: 25%; */
+    justify-content: center;
+    /* height: 65px; */
+    align-items: center;
+    transition: 500ms;
+
+}
+
+
+h2 {
+    /* background-color: blue; */
+    text-align: center;
+    padding: 20px; 
+    font-family: "Emilys Candy", serif; 
+    font-size: xx-large;
+    text-shadow:rgb(253, 89, 29)1px 1px 2px;
+    }
+
+p { 
+    padding: 5px;
+    line-height: 30px;
+    /* text-align: justify; */
+    text-align: center;
+    font-size: 17px;
+   
+}
+
+
+.slideshow { 
+    height: 300px;
+    width: 600px; 
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+} 
+    
+  
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%; 
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.slide {
+    width: 20%;
+    transition: .4s;
+   
+}
+
+ .slide img {
+    width: 100%;
+    height: 100%;
+   
+} 
+
+@keyframes animacao {
+
+    0% { margin-left: 0;}
+    20% {margin-left: 0;}
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    50% { margin-left: -200%;}
+    70% { margin-left: -200%;}
+    75% { margin-left: -300%;}
+    95% { margin-left: -300%;}
+    100% { margin-left: -400%;} 
+    
+}
+
+
+.afetos {
+    /* background-color: blue; */
+    padding-top: 17px;
+    font-size: 25px;
+    text-align: center;
+    align-content: center; 
+    font-style: inherit;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 20px;
+       
+}
+
+.afetos img {
+    height: 220px;
+    width: 330px;
+    transform: scale(0.8);
+  
+ }
+
+ .afetos img:hover {transform: scale(1)}
+
+  
+  
+.rodape {
+    background-color: blanchedalmond;
+    height: 100px;
+    display: flex; 
+    font-style: inherit;
+    text-align: center; 
+    justify-content: center;
+    padding-top: 30px;
+    justify-content: space-evenly;
+    
+    
+}
+   
+
+aside  { 
+    /* background-color: blue; */
+     display: flex;
+     gap: 30px;
+     margin: 10px 20px;
+     display: flex;
+     justify-content: right;
+     margin-top: -50px;
+     align-items: baseline;
+       
+ }
+
+
+/*Cardapio  */
+
+     .book {
+  
+        display: inline-table;
+        /* width: 50%; */
+        text-align: center;
+        font-weight: bold;
+        font-style: inherit;
+        font-size: 20px;
+        /* margin: 0.5em; */
+        padding-bottom: 25px;
+        padding-top: 10px;
+        
+    
+    }
+  
+.book img {
+    height: 200px;
+    width: 350px;
+    max-width: 100%;
+    transform: scale(0.8);
+    
+ }
+
+.book img:hover {
+    transform: scale(1);
+    
+ }
+
+ .itens-cardapio {
+    text-align: center;
+ }
+
+
+ /* Kit festa */
+
+ .kit-festa {
+    padding-top: 15px;
+    text-align: center;
+    align-content: center;
+    margin-bottom: 100px;
+
+}
+
+.tel-encomenda {
+    /* background-color: blue; */
+    justify-content: center;
+    padding-top: 50px;
+     
+}
+
+ /* Loja */
+
+
+ .mapa {width: 100%}
+
+
+/* Contato */
+
+
+form {
+    /* background-color: blue; */
+    /* max-width: 00px; */
+    margin: auto;
+    padding: 30px;
+
+}
+
+label {
+    width: 78px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(253, 89, 29);
+ 
+}
+
+
+#nome, #email, #telefone, #nascimento, #assunto, #mensagem {
+    width: 400px;
+    /* height: 40px; */
+    border-radius: 4px;
+    padding: 4px;
+   
+  
+}
+
+#mensagem { height: auto;}
+
+#enviar {
+    background-color:  rgb(253, 89, 29);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    
+ }
+
+.button {
+    text-align: center;
+} 
+
+ #enviar:hover, #enviar:focus{
+    background-color: rgb(59, 26, 26);
+}
+
+@media  screen and (min-width: 600px) { 
+
+.topo{
+    /* background-color: aqua; */
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    
+    }
+     
+.menu { 
+    margin-top: 0;
+    width: 70%;}
+
+
+
+} 
+
+
+
+     
+
+@media screen and (min-width: 800px) {
+
+.menu { 
+    width: 70%;
+    font-size: 18px;
+}
+
+.slideshow {
+    height: 350px;
+}
+
+.p { font-size: 15px;}
+    
+}
+
+
+   
+    
+   
+   
+      
+
+
+
+
